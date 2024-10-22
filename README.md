@@ -14,4 +14,6 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 1. Abre una terminal en tu máquina local.
 2. git clone git@github.com:milesivit/de_camino_a_casa.git
 3. npm install
-4. npm start
+4. git checkout main
+5. npm start
+6. code .
