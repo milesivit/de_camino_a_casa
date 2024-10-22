@@ -1,4 +1,4 @@
-# Proyecto De Camino a Casa
+# De Camino a Casa🐾.
 
 Este proyecto es una aplicación desarrollada con Ant Design y React. A continuación, se indican los pasos para clonar el repositorio y ponerlo en funcionamiento en tu máquina local.
 
