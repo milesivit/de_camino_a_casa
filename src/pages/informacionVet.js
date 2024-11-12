@@ -9,7 +9,7 @@ import vet3 from '../img/vet3.jpeg';
 import vet7 from '../img/amo.png';
 import ref3 from '../img/refugio3.webp';
 import ref4 from '../img/refugio4frank.jpg';
-import banner from '../img/bannervet2.png'; 
+import banner from '../img/refugiosVeterinarias.png'; 
 
 const { Title } = Typography;
 
