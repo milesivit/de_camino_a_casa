@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 
-function HistorialAnimal() {
+function Ayuda() {
   return (
     <div>
       <Navbar />
@@ -11,4 +11,4 @@ function HistorialAnimal() {
   );
 }
 
-export default HistorialAnimal;
+export default Ayuda;

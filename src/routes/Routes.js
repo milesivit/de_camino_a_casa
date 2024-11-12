@@ -10,6 +10,7 @@ import InformacionVet from '../pages/informacionVet';
 import HistorialAnimal from '../pages/historialAnimal';
 import Noticias from '../pages/noticias';
 import TestPersonalidad from '../pages/testPersonalidad';
+import Ayuda from '../pages/ayuda';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/HistorialAnimal" element={<HistorialAnimal />} />
         <Route path="/Noticias" element={<Noticias />} />
         <Route path="/TestPersonalidad" element={<TestPersonalidad />} />
-        
+        <Route path="/ayuda" element={<Ayuda />} />
 
       </Routes>
     </BrowserRouter>

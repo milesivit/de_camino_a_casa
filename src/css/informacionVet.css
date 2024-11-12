@@ -1,0 +1,9 @@
+.background {
+    background-image: url("/src/img/fondito2.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed; 
+    min-height: 100vh !important;
+  }
+  
