@@ -5,10 +5,10 @@ import { UserOutlined } from '@ant-design/icons'; // Importamos el ícono de usu
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import Banner from '../img/inicio.png';
-import logro1 from '../img/logros1.jpeg'; // Asegúrate de tener tus imágenes
-import logro2 from '../img/logros2.jpeg'; // Asegúrate de tener tus imágenes
-import logro3 from '../img/logros3.jpeg'; // Asegúrate de tener tus imágenes
-import logro4 from '../img/logros4.jpeg'; // Asegúrate de tener tus imágenes
+import logro1 from '../img/logro1.png'; // Asegúrate de tener tus imágenes
+import logro2 from '../img/logro2.png'; // Asegúrate de tener tus imágenes
+import logro3 from '../img/logro3.png'; // Asegúrate de tener tus imágenes
+import logro4 from '../img/logro4.png'; // Asegúrate de tener tus imágenes
 import donacion from '../img/donacion.jpeg'; // Asegúrate de tener esta imagen para la donación
 
 const CustomButton = ({ link, text }) => {
