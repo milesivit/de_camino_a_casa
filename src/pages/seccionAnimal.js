@@ -1,35 +1,17 @@
 import React from 'react';
 import { Col, Row, Typography, Card, Button } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import '../css/seccionAnimal.css';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import Banner from '../img/seccionanimal.png';
-import Alex from '../img/alex.jpg';
-import Theo from '../img/theo.jpg';
-import Milo from '../img/milo.jpg';
-import Joaquin from '../img/joaquin.jpg';
-import Ali from '../img/ali.jpg';
-import Luna from '../img/luna.jpg';
-import Alejo from '../img/alejotomador.jpg'
-import Chiquito from '../img/chiquito.jpg';
-import Dave from '../img/Dave.jpeg';
+import mascotas from './mascotas';
+
 
 const { Title, Text } = Typography;
 
-// Información de mascotas para adopción
-const mascotas = [
-  { img: Alex, name: 'Max', description: 'Jugueton y sociable', sex: 'Macho', age: '10 años' },
-  { img: Theo, name: 'Theo', description: 'Aventurero y cariñoso', sex: 'Macho', age: '5 años' },
-  { img: Milo, name: 'Milo', description: 'Jugueton y negro', sex: 'Macho', age: '4 años' },
-  { img: Joaquin, name: 'Joaquin', description: 'Tranquilo y amigable', sex: 'Macho', age: '15 años' },
-  { img: Ali, name: 'Ali', description: 'Amorosa y protectora', sex: 'Hembra', age: '6-8 años' },
-  { img: Luna, name: 'Luna', description: 'Buena y reservada', sex: 'Hembra', age: '1 año y medio' },
-  { img: Chiquito, name: 'Chiquito', description: 'Fiel y orgulloso', sex: 'Macho', age: '20 años' },
-  { img: Alejo, name: 'Alejo', description: 'Borracho y bandido', sex: 'Macho', age: '20 años' },
-  { img: Dave, name: 'Dave The Magical Cheese Wizard', description: 'Gordo y Poderoso', sex: 'Desconocido', age: '2000 años' },
-];
-
 function SeccionAnimal() {
+  const navigate = useNavigate();
   return (
     <div className="background">
       <Row>
@@ -65,10 +47,14 @@ function SeccionAnimal() {
         <img src={mascota.img} alt={mascota.name} style={{ width: '100%', marginBottom: '10px', borderRadius: '8px' }} />
         <Title level={4} style={{ marginBottom: '5px' }}>{mascota.name}</Title>
         <Text>{mascota.description}</Text><br />
-        <Text>Sexo: {mascota.sex}</Text><br />
-        <Text>Edad: {mascota.age}</Text>
-        <div style={{ marginTop: '10px' }}>
-          <Button type="primary" style={{ backgroundColor: '#4caf50', borderColor: '#4caf50', color: 'white' }}>
+            <Text>Sexo: {mascota.sex}</Text><br />
+            <Text>Edad: {mascota.age}</Text>
+            <div style={{ marginTop: '10px' }}>
+            <Button
+            type="primary"
+            style={{ backgroundColor: '#4caf50', borderColor: '#4caf50', color: 'white' }}
+            onClick={() => navigate(`/mascotas/${mascota.id}`)} // Navega usando mascota.id
+          >
             Adoptar
           </Button>
         </div>
@@ -83,4 +69,5 @@ function SeccionAnimal() {
   );
 }
 
-export default SeccionAnimal;
+
+export default SeccionAnimal; 

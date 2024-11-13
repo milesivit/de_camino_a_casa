@@ -22,9 +22,9 @@ function App() {
         <Route path="/EntidadesAsociadas" element={<EntidadesAsociadas />} />
         <Route path="/Tienda" element={<Tienda />} />
         <Route path="/SeccionAnimal" element={<SeccionAnimal />} />
+        <Route path="/mascotas/:id" element={<HistorialAnimal />} />
         <Route path="/InformacionVet" element={<InformacionVet />} />
         <Route path="/SobreNosotros" element={<SobreNosotros />} />
-        <Route path="/HistorialAnimal" element={<HistorialAnimal />} />
         <Route path="/Noticias" element={<Noticias />} />
         <Route path="/TestPersonalidad" element={<TestPersonalidad />} />
         <Route path="/ayuda" element={<Ayuda />} />
