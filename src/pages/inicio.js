@@ -217,7 +217,7 @@ function Inicio() {
               <Avatar size={64} icon={<UserOutlined />} />
               <div style={{ marginTop: '10px' }}>
                 <p><strong>Alejo Pinatti</strong></p>
-                <p>Jefe de Programas de cuidado Animal</p>
+                <p>Jefe de Programas de Cuidado Animal</p>
               </div>
             </Col>
 
