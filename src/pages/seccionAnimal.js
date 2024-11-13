@@ -12,12 +12,13 @@ import Ali from '../img/ali.jpg';
 import Luna from '../img/luna.jpg';
 import Alejo from '../img/alejotomador.jpg'
 import Chiquito from '../img/chiquito.jpg';
+import Dave from '../img/Dave.jpeg';
 
 const { Title, Text } = Typography;
 
 // Información de mascotas para adopción
 const mascotas = [
-  { img: Alex, name: 'Alex', description: 'Jugueton y sociable', sex: 'Macho', age: '10 años' },
+  { img: Alex, name: 'Max', description: 'Jugueton y sociable', sex: 'Macho', age: '10 años' },
   { img: Theo, name: 'Theo', description: 'Aventurero y cariñoso', sex: 'Macho', age: '5 años' },
   { img: Milo, name: 'Milo', description: 'Jugueton y negro', sex: 'Macho', age: '4 años' },
   { img: Joaquin, name: 'Joaquin', description: 'Tranquilo y amigable', sex: 'Macho', age: '15 años' },
@@ -25,6 +26,7 @@ const mascotas = [
   { img: Luna, name: 'Luna', description: 'Buena y reservada', sex: 'Hembra', age: '1 año y medio' },
   { img: Chiquito, name: 'Chiquito', description: 'Fiel y orgulloso', sex: 'Macho', age: '20 años' },
   { img: Alejo, name: 'Alejo', description: 'Borracho y bandido', sex: 'Macho', age: '20 años' },
+  { img: Dave, name: 'Dave The Magical Cheese Wizard', description: 'Gordo y Poderoso', sex: 'Desconocido', age: '2000 años' },
 ];
 
 function SeccionAnimal() {

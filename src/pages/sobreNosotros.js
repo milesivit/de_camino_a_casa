@@ -1,11 +1,13 @@
 import React from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Card, Typography } from 'antd';
 import '../css/nosotros.css'; // Importando el archivo CSS
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import Nosotros2 from '../img/nosotros2.jpeg';
 import Nosotros3 from '../img/nosotros3.jpeg';
-import SobreNosotros from '../img/sobrenosotros.png'; 
+import sobreNosotros from '../img/sobrenosotros.png'; 
+
+const { Title, Paragraph } = Typography;
 
 const SobreNosotros = () => {
   return (
@@ -14,21 +16,13 @@ const SobreNosotros = () => {
 
       {/* Primera fila: Banner y ¿Qué Hacemos? */}
       <Row gutter={[32, 32]} justify="center" align="stretch" style={{ width: '100%' }}>
-        {/* Columna para el banner */}
-        <Col xs={24} sm={24} md={12} lg={12}>
-        <div style={{ width: '100%', height: 'auto' }}>
-          <img src={SobreNosotros} alt="Banner" style={{ width: '100%' }} />
-        </div>
-        </Col>
-
-        {/* Columna para el primer cuadro: ¿Qué Hacemos? */}
         <Col
           xs={24}
           sm={24}
-          md={12} // Esto asegura que ocupe la mitad del ancho en pantallas medianas y mayores
-          lg={12} // Lo mismo para pantallas grandes
+          md={12}
+          lg={12}
           className="text-column bg-green"
-          style={{ height: '50vh', width: '100%' }}
+          style={{ height: '25.9vh', width: '100%' }}
         >
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
             <h2 className="section-title">¿Qué Hacemos?</h2>
@@ -36,6 +30,11 @@ const SobreNosotros = () => {
               Conectamos a personas que desean adoptar animales con refugios, veterinarias y tiendas de mascotas, promoviendo
               la adopción responsable y el bienestar animal.
             </p>
+          </div>
+        </Col>
+        <Col xs={24} sm={24} md={12} lg={12}>
+          <div style={{ width: '100%', height: 'auto' }}>
+            <img src={sobreNosotros} alt="Banner" style={{ width: '100%', height: 'auto' }} />
           </div>
         </Col>
       </Row>
@@ -78,15 +77,14 @@ const SobreNosotros = () => {
       </Row>
 
       {/* Cuarta fila: Objetivos y Valores */}
-      <Row gutter={[32, 32]} justify="center" align="stretch" style={{ width: '100%' }}>
-        {/* Objetivos */}
+      <Row gutter={[32, 32]} justify="center" align="stretch" style={{ width: '100%', marginBottom: 0 }}>
         <Col
           xs={24}
           sm={24}
-          md={12} // Modifica a un 12 para que ocupe la mitad del ancho en pantallas medianas y mayores
-          lg={12} // Asegura que se ocupe la mitad del ancho en pantallas grandes
+          md={12}
+          lg={12}
           className="text-column bg-yellow"
-          style={{ height: 'auto', padding: 0 }} // Asegura que el alto sea solo el necesario
+          style={{ height: 'auto', padding: 0 }}
         >
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
             <h2 className="section-title">Objetivos</h2>
@@ -98,12 +96,11 @@ const SobreNosotros = () => {
           </div>
         </Col>
 
-        {/* Valores */}
         <Col
           xs={24}
           sm={24}
-          md={12} // Modifica a un 12 para que ocupe la mitad del ancho en pantallas medianas y mayores
-          lg={12} // Asegura que se ocupe la mitad del ancho en pantallas grandes
+          md={12}
+          lg={12}
           className="text-column bg-green"
           style={{ height: '50vh', width: '100%' }}
         >
@@ -120,7 +117,8 @@ const SobreNosotros = () => {
         </Col>
       </Row>
 
-      <FooterComponent />
+      {/* Footer sin espacio extra */}
+      <FooterComponent style={{ marginTop: 0, paddingTop: 0 }} />
     </div>
   );
 };

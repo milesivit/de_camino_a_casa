@@ -1,6 +1,24 @@
 /* Asegura que el contenedor principal tenga al menos la altura de la ventana */
 .content-wrapper {
-    min-height: 100vh;
+    min-height: 100vh; /* Altura mínima del contenedor */
+}
+
+/* Asegura que el contenedor principal no tenga márgenes ni rellenos adicionales */
+.background {
+  margin: 0;
+  padding: 0;
+}
+
+/* Elimina márgenes de las filas */
+.ant-row {
+  margin: 0 !important;
+}
+
+/* Elimina márgenes y rellenos del footer */
+.footer-wrapper,
+.footer-component {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* Estilos para las columnas de texto */
@@ -10,9 +28,16 @@
     align-items: center;  /* Centra el contenido verticalmente */
     text-align: center;  /* Centra el texto horizontalmente */
     padding: 5%;  /* Ajusta el relleno alrededor del texto */
-    border-radius: 10px;
     padding-left: 0; /* Corregir el padding para no desplazar el contenido */
     height: auto;  /* Ajusta la altura al contenido */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las imágenes */
+.image {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
 }
 
 /* Alineación y estilos para la imagen cuando está a la izquierda */
@@ -48,6 +73,9 @@
 .section-title {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff; /* Color cálido para los títulos */
 }
 
 .section-text {
@@ -55,6 +83,8 @@
     line-height: 1.6;
     margin-right: 3%;
     margin-left: 3%;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
 /* Listas dentro de las secciones */
