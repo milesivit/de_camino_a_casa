@@ -5,7 +5,7 @@ import FooterComponent from '../components/footer';
 import asociacion1 from '../img/asociacion1.png';
 import asociacion2 from '../img/asociacion2.png';
 import asociacion3 from '../img/asociacion3.png';
-import banner from '../img/Banner_EntidadesAsociadas.png'; // Ruta relativa al archivo de imagen
+import Banner from '../img/entidadesasociadas.png'; // Ruta relativa al archivo de imagen
 import '../css/entidadesAsociadas.css'; // Ruta relativa al archivo CSS
 
 const { Title, Paragraph } = Typography;
@@ -15,7 +15,7 @@ function EntidadesAsociadas() {
     {
       nombre: 'Refugio Animal Happy Paws',
       descripcion: 'Un refugio que cuida y encuentra hogar a perros y gatos abandonados.',
-      contacto: 'info@happypaws.org',
+      contacto: 'infosiempre@happypaws.org',
       img: asociacion1,
     },
     {
@@ -33,14 +33,20 @@ function EntidadesAsociadas() {
   ];
 
   return (
-    <div className="background">
-      {/* Navbar siempre encima */}
-      <Navbar />
-      
-      <div className="banner-container">
-        <img src={banner} alt="Banner de Entidades Asociadas" className="banner-image" />
-      </div>
-      
+      <div className="background">
+        <Row>
+          <Col xs={24}>
+            <Navbar />
+          </Col>
+        </Row>
+        
+        <Row>
+          <Col xs={24}>
+            <div>
+              <img src={Banner} alt="Banner" style={{ width: '100%' }} />
+            </div>
+          </Col>
+        </Row>
       <div className="entidades-container">
         <Row gutter={[16, 24]}>
           {entidades.map((entidad, index) => (

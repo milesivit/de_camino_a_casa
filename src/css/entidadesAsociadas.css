@@ -31,11 +31,11 @@
 /* Estilo para la sección de entidades */
 .entidades-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Espacio pequeño entre las tarjetas */
-    justify-content: space-between;
+    justify-content:space-around;
 }
 
 /* Título de la sección */
@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 20px auto;
     margin-bottom: 10px; /* Espacio pequeño entre las tarjetas */
     background-color: #fff; /* Fondo blanco para las tarjetas */
     border-radius: 8px;
