@@ -25,3 +25,18 @@
     margin-bottom: 20px; /* Espacio entre tarjetas en filas sucesivas */
 }
 
+@keyframes deslizar-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.imagen-animada {
+  animation: deslizar-horizontal 3s ease-in-out infinite;
+}

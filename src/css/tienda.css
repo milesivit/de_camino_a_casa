@@ -1,0 +1,11 @@
+/* Fondo box */
+.noticia-card {
+    background-color: #08411fa4;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
