@@ -55,8 +55,8 @@ function Donaciones() {
             >
               <Input type="number" prefix="$" placeholder="0.00" />
             </Form.Item>
-            <Form.Item label="Mensaje (opcional)" name="message">
-              <Input.TextArea placeholder="Escribe un mensaje (opcional)" />
+            <Form.Item label="Alias" name="message">
+              <Input.TextArea placeholder="Escribe alias de fundacion/veterinaria/refugio" />
             </Form.Item>
             <Form.Item>
               <Button type="primary" htmlType="submit" block>
