@@ -9,7 +9,7 @@ import noticia1 from '../img/noticia1.jpg';
 import noticia2 from '../img/noticia2.jpeg';
 import noticia3 from '../img/noticia3.jpeg';
 import noticia4 from '../img/noticia4.jpeg';
-import noticia5 from '../img/noticia5.jpeg';
+import noticia5 from '../img/noticia5.jpg';
 import noticia6 from '../img/noticia6.jpeg';
 import noticia7 from '../img/noticia7.jpg';
 import noticia8 from '../img/noticia8.jpg';
