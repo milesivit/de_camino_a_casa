@@ -50,7 +50,7 @@ function Donaciones() {
               name="amount"
               rules={[
                 { required: true, message: 'Por favor ingresa un monto' },
-                { type: 'number', min: 0.01, message: 'El monto debe ser mayor a 0' }
+                
               ]}
             >
               <Input type="number" prefix="$" placeholder="0.00" />

@@ -3,7 +3,7 @@ import { Row, Col, Card, Typography } from 'antd';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import asociacion1 from '../img/asociacion1.png';
-import asociacion2 from '../img/asociacion2.png';
+import asociacion2 from '../img/felinos.jpeg';
 import asociacion3 from '../img/asociacion3.png';
 import Banner from '../img/entidadesasociadas.png'; // Ruta relativa al archivo de imagen
 import '../css/entidadesAsociadas.css'; // Ruta relativa al archivo CSS
