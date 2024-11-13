@@ -4,6 +4,7 @@ import FooterComponent from '../components/footer';
 import { Card, Row, Col, Typography } from 'antd';
 import '../css/noticias.css';
 import banner from '../img/bannernoticia.jpeg';
+import UltimoMomento from '../img/bannerUltMom.jpeg';
 import noticia1 from '../img/noticia1.jpg';
 import noticia2 from '../img/noticia2.jpeg';
 import noticia3 from '../img/noticia3.jpeg';
@@ -60,6 +61,19 @@ function Noticias() {
         </Col>
       </Row>
 
+      {/* Banner */}
+      <Row>
+        <Col xs={24}>
+          <div>
+            <img
+              src={UltimoMomento}
+              alt="Banner"
+              style={{ width: '100%', height: 'auto', maxHeight: '200px' }}  // Ajustamos la altura máxima
+            />
+          </div>
+        </Col>
+      </Row>
+
       {/* Noticias */}
       <div style={{ padding: '2% 5%' }}>
         <Row gutter={[20, 20]} justify="center">
@@ -82,7 +96,7 @@ function Noticias() {
                 bodyStyle={{ display: 'flex', height: '100%' }}
               >
                 <Row gutter={16} style={{ flex: 1 }}>
-                  
+
                   {/* Imagen de la noticia */}
                   <Col xs={10} style={{ display: 'flex', alignItems: 'center', paddingRight: '10px' }}>
                     <img
