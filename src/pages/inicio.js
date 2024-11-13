@@ -98,6 +98,51 @@ function Inicio() {
         </div>
       </Carousel>
 
+        {/* Separar los cuadros del Carousel y agregarlos antes de la sección de donaciones */}
+        <Row gutter={[32, 32]} justify="center" style={{ margin: '5% 0' }}>
+          <Col xs={24} sm={12} md={8} lg={8}>
+            <Card
+              title="¿Aún no sabes quién es tu amigo ideal?"
+              bordered={false}
+              style={{
+                textAlign: 'center',
+                padding: '3%',
+                margin: '5%',
+                backgroundColor: 'white',
+                height: 'auto'  // Asegura que todas las tarjetas tengan la misma altura
+              }}
+            >
+              <p>Descubre al compañero perfecto para tu vida. Realiza nuestro test interactivo y encuentra el animal que mejor se adapta a ti y a tu hogar. ¡Es rápido y divertido!</p>
+              <Link to="/TestPersonalidad">
+                <Button type="primary" size="large" style={{ borderRadius: '8px' }}>
+                  Realizar Test
+                </Button>
+              </Link>
+            </Card>
+          </Col>
+
+          <Col xs={24} sm={12} md={8} lg={8}>
+            <Card
+              title="Principales noticias del mundo animal"
+              bordered={false}
+              style={{
+                textAlign: 'center',
+                padding: '3%',
+                margin: '5%',
+                backgroundColor: 'white',
+                height: 'auto'  // Asegura que todas las tarjetas tengan la misma altura
+              }}
+            >
+              <p>Mantente informado con las últimas noticias y eventos sobre el bienestar animal, adopciones, historias inspiradoras y más. ¡Conoce todo lo que está sucediendo en el mundo animal!</p>
+              <Link to="/Noticias">
+                <Button type="primary" size="large" style={{ borderRadius: '8px' }}>
+                  Ver Noticias
+                </Button>
+              </Link>
+            </Card>
+          </Col>
+        </Row>
+
       {/* Cuadro blanco con la barra de progreso de la donación */}
       <div style={{ display: 'flex', justifyContent: 'center', margin: '2% 0' }}>
         <Card
