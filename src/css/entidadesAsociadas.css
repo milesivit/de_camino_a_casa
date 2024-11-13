@@ -1,0 +1,99 @@
+/* src/styles/EntidadesAsociadas.css */
+
+/* Fondo de la página */
+.background {
+    background-image: url("../img/fondito2.png") !important;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+    padding: 0;
+}
+
+/* Eliminar márgenes y padding en las filas y columnas de Ant Design */
+.ant-row {
+    margin: 0 !important;  /* Elimina márgenes laterales */
+}
+
+.ant-col {
+    padding: 0 !important; /* Elimina cualquier padding en las columnas */
+}
+
+/* Estilo para el contenedor del banner */
+.banner-container {
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Estilo para la sección de entidades */
+.entidades-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio pequeño entre las tarjetas */
+    justify-content: space-between;
+}
+
+/* Título de la sección */
+.entidades-title {
+    text-align: center;
+}
+
+.entidades-description {
+    text-align: center;
+}
+
+/* Estilo para las tarjetas de cada entidad */
+.entidad-card {
+    transition: transform 0.3s;
+    min-width: 280px; /* Asegura un tamaño mínimo de las tarjetas */
+    width: calc(33.33% - 10px); /* Tres tarjetas por fila con espacio entre ellas */
+    min-height: 300px; /* Altura mínima para que las tarjetas sean más largas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Espacio pequeño entre las tarjetas */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.entidad-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para la imagen de cada entidad */
+.entidad-image-container {
+    text-align: center;
+}
+
+.entidad-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Información dentro de la tarjeta */
+.entidad-info {
+    text-align: center;
+    padding: 15px;
+}
+
+.entidad-name {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.entidad-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.entidad-contacto {
+    font-size: 14px;
+    color: #888;
+}
