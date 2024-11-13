@@ -1,0 +1,76 @@
+/* Asegura que el contenedor principal tenga al menos la altura de la ventana */
+.content-wrapper {
+    min-height: 100vh;
+}
+
+/* Estilos para las columnas de texto */
+.text-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Centra el contenido verticalmente */
+    text-align: center;  /* Centra el texto horizontalmente */
+    padding: 5%;  /* Ajusta el relleno alrededor del texto */
+    border-radius: 10px;
+    padding-left: 0; /* Corregir el padding para no desplazar el contenido */
+    height: auto;  /* Ajusta la altura al contenido */
+}
+
+/* Alineación y estilos para la imagen cuando está a la izquierda */
+.image-left {
+    margin-left: 0;  /* Asegura que la imagen esté alineada completamente a la izquierda */
+    margin-right: auto; /* Elimina cualquier margen a la derecha */
+    height: 100%;  /* La imagen ocupará toda la altura disponible */
+    object-fit: cover; /* La imagen cubre el área sin distorsión */
+}
+
+/* Alineación y estilos para la imagen cuando está a la derecha */
+.image-right {
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+    padding-right: 0; /* Asegura que la imagen toque el margen derecho */
+}
+
+/* Estilos para la columna de imagen */
+.image-column {
+    display: flex;
+    align-items: stretch;  /* La imagen se ajustará a la altura del contenedor */
+}
+
+/* Estilos para los fondos de las columnas */
+.bg-green {
+    background-color: #568542;
+}
+
+.bg-yellow {
+    background-color: #edeb0a;
+}
+
+/* Títulos y texto de las secciones */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+/* Listas dentro de las secciones */
+.section-list {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 20px;
+    list-style-type: none;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+/* Estilos para pantallas pequeñas (menos de 767px) */
+@media screen and (max-width: 767px) {
+    .text-column,
+    .image-column {
+        height: auto; /* Permite que las columnas se ajusten al contenido en pantallas pequeñas */
+    }
+}

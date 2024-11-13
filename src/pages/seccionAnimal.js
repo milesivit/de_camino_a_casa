@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row, Typography, Card, Button } from 'antd';
-import seccionAnimal from '../css/seccionAnimal.css'
+import '../css/seccionAnimal.css';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import Banner from '../img/seccionanimal.png';

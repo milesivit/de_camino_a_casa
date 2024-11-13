@@ -1,7 +1,12 @@
 import React from 'react';
+import { Row, Col, Card, Typography } from 'antd';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
-import { Card, Typography, Row, Col } from 'antd';
+import asociacion1 from '../img/asociacion1.png';
+import asociacion2 from '../img/asociacion2.png';
+import asociacion3 from '../img/asociacion3.png';
+import banner from '../img/Banner_EntidadesAsociadas.png'; // Ruta relativa al archivo de imagen
+import '../css/entidadesAsociadas.css'; // Ruta relativa al archivo CSS
 
 const { Title, Paragraph } = Typography;
 
@@ -11,61 +16,43 @@ function EntidadesAsociadas() {
       nombre: 'Refugio Animal Happy Paws',
       descripcion: 'Un refugio que cuida y encuentra hogar a perros y gatos abandonados.',
       contacto: 'info@happypaws.org',
-      img: '/img/Happy_Paws.png', // Ruta correcta
+      img: asociacion1,
     },
     {
       nombre: 'Fundación Amigos Felinos',
       descripcion: 'Organización dedicada al rescate de gatos callejeros y su bienestar.',
       contacto: 'contacto@amigosfelinos.com',
-      img: '/img/Amigos_Felinos.png', // Ruta correcta
+      img: asociacion2,
     },
     {
       nombre: 'Perros de Asistencia y Más',
       descripcion: 'Proporciona entrenamiento a perros de asistencia para personas con discapacidades.',
       contacto: 'perrosasistencia@ayuda.org',
-      img: '/img/WhatsApp-Image-2021-12-31-at-14.32.44.png', // Ruta correcta
+      img: asociacion3,
     },
   ];
 
-
   return (
     <div className="background">
+      {/* Navbar siempre encima */}
       <Navbar />
-        <Title level={2} style={{ textAlign: 'center' }}>Entidades Asociadas</Title>
-        <Paragraph style={{ textAlign: 'center' }}>
-          Conoce a las organizaciones con las que colaboramos para mejorar la vida de los animales.
-        </Paragraph>
-        
-        <Row gutter={[16, 16]}>
+      
+      <div className="banner-container">
+        <img src={banner} alt="Banner de Entidades Asociadas" className="banner-image" />
+      </div>
+      
+      <div className="entidades-container">
+        <Row gutter={[16, 24]}>
           {entidades.map((entidad, index) => (
-            <Col key={index} span={24} style={{ marginBottom: '20px' }}>
-              <Card bordered={false} style={{ display: 'flex', padding: 0 }}>
-                {/* Div de la imagen, ocupa un tamaño fijo */}
-                <div
-                  style={{
-                    width: '200px',
-                    height: '200px',
-                    flexShrink: 0,
-                    overflow: 'hidden',
-                    borderRadius: '8px',
-                  }}
-                >
-                  <img
-                    alt={entidad.nombre}
-                    src={entidad.img}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
+            <Col key={index} xs={24} sm={12} md={8}>
+              <Card className="entidad-card" bordered={false}>
+                <div className="entidad-image-container">
+                  <img src={entidad.img} alt={entidad.nombre} className="entidad-image" />
                 </div>
-
-                {/* Div de la información, ocupa el resto del espacio */}
-                <div style={{ flexGrow: 1, marginLeft: '20px' }}>
-                  <Title level={3} style={{ margin: 0 }}>{entidad.nombre}</Title>
-                  <Paragraph>{entidad.descripcion}</Paragraph>
-                  <Paragraph style={{ marginTop: '10px' }}>
+                <div className="entidad-info">
+                  <Title level={3} className="entidad-name">{entidad.nombre}</Title>
+                  <Paragraph className="entidad-description">{entidad.descripcion}</Paragraph>
+                  <Paragraph className="entidad-contacto">
                     <strong>Contacto:</strong> {entidad.contacto}
                   </Paragraph>
                 </div>
@@ -73,6 +60,9 @@ function EntidadesAsociadas() {
             </Col>
           ))}
         </Row>
+      </div>
+      
+      {/* Footer en el fondo */}
       <FooterComponent />
     </div>
   );

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import 'antd/dist/reset.css';
 import { Layout, Menu, Dropdown, Avatar } from 'antd';
 import perro from '../img/perro.png';
-import huella from '../img/hola+.png';
+import huella from '../img/logo.png';
 import '../css/Navbar.css'; // Importa después del CSS de Ant Design
 
 const { Header } = Layout;
