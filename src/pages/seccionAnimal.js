@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row, Typography, Card, Button } from 'antd';
+import seccionAnimal from '../css/seccionAnimal.css'
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import Banner from '../img/seccionanimal.png';
@@ -45,7 +46,7 @@ function SeccionAnimal() {
       
       <Row justify="center" style={{ marginTop: '30px' }}>
         <Col xs={24} md={20} lg={16} style={{ textAlign: 'center' }}>
-          <Text style={{ fontSize: '1.5rem', marginTop: '-20px', display: 'block' }}>
+          <Text style={{ fontSize: '1.5rem', marginTop: '3%', display: 'block' }}>
             ¿Buscas un nuevo amigo?
           </Text>
           <Title level={1} style={{ color: 'black', marginTop: '20px', marginBottom: '40px', fontSize: '3rem', fontWeight: 300 }}>

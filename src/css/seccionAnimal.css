@@ -1,0 +1,13 @@
+.background {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .ant-row {
+    margin: 0 !important;  /* Asegúrate de que no haya márgenes laterales */
+  }
+  
+  .ant-col {
+    padding: 0 !important; /* Elimina cualquier padding en las columnas */
+  }
+
