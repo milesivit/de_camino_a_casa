@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import { Card, Row, Col, Typography } from 'antd';
 import '../css/noticias.css';
-import banner from '../img/bannernoticia.jpeg';
+import Banner from '../img/noticias.png';
 import UltimoMomento from '../img/bannerUltMom.jpeg';
 import noticia1 from '../img/noticia1.jpg';
 import noticia2 from '../img/noticia2.jpeg';
@@ -56,7 +56,7 @@ function Noticias() {
       <Row>
         <Col xs={24}>
           <div>
-            <img src={banner} alt="Banner" style={{ width: '100%' }} />
+            <img src={Banner} alt="Banner" style={{ width: '100%' }} />
           </div>
         </Col>
       </Row>
