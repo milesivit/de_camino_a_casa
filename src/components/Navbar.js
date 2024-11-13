@@ -12,7 +12,6 @@ function Navbar() {
   const dropdownMenu = (
     <Menu>
       <Menu.Item key="1"><Link to="/ayuda">Ayuda</Link></Menu.Item>
-      <Menu.Item key="2"><Link to="/EntidadesAsociadas">Entidades Asociadas</Link></Menu.Item>
     </Menu>
   );
 
@@ -40,11 +39,14 @@ function Navbar() {
           <Menu.Item key="8" className="custom-nav-button">
             <Link to="/TestPersonalidad">Test</Link>
           </Menu.Item>
-          <Menu.Item key="8" className="custom-nav-button">
+          <Menu.Item key="9" className="custom-nav-button">
             <Link to="/Noticias">Noticias</Link>
           </Menu.Item>
-          <Menu.Item key="8" className="custom-nav-button">
+          <Menu.Item key="10" className="custom-nav-button">
             <Link to="/SobreNosotros">Sobre Nosotros</Link>
+          </Menu.Item>
+          <Menu.Item key="11" className="custom-nav-button">
+          <Link to="/EntidadesAsociadas">Entidades Asociadas</Link>
           </Menu.Item>
         </Menu>
         <Dropdown overlay={dropdownMenu} trigger={['click']}>

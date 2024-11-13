@@ -11,7 +11,7 @@ import Nosotros5 from '../img/nosotros5.jpeg';
 
 const SobreNosotros = () => {
   return (
-    <div>
+    <div className="background">
       <Navbar />
       <div className="content-wrapper">
         {/* Primera fila: ¿Qué Hacemos? */}
