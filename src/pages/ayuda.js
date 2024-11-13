@@ -4,7 +4,7 @@ import FooterComponent from '../components/footer';
 
 function Ayuda() {
   return (
-    <div>
+    <div className="background">
       <Navbar />
       <FooterComponent />
     </div>

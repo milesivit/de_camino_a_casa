@@ -7,7 +7,7 @@ import bannerInicio from '../img/bannerInicio.png';
 
 function Inicio() {
   return (
-    <div>
+    <div className="background">
       <Navbar />
 
       <Row>

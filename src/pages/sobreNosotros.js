@@ -5,7 +5,7 @@ import perrosPanas from '../img/perrosPanas.jpeg';
 
 function sobreNosotros() {
   return (
-    <div>
+    <div className="background">
       <Navbar />
       <img src={perrosPanas} alt="perroFacha" />
       <FooterComponent />
