@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import { Card, Typography, Row, Col } from 'antd';
+import Banner from '../img/entidadesasociadas.png' 
 
 const { Title, Paragraph } = Typography;
 
@@ -30,7 +31,19 @@ function EntidadesAsociadas() {
 
   return (
     <div className="background">
-      <Navbar />
+      <Row>
+        <Col xs={24}>
+          <Navbar />
+        </Col>
+      </Row>
+      
+      <Row>
+        <Col xs={24}>
+          <div>
+            <img src={Banner} alt="Banner" style={{ width: '100%' }} />
+          </div>
+        </Col>
+      </Row>
         <Title level={2} style={{ textAlign: 'center' }}>Entidades Asociadas</Title>
         <Paragraph style={{ textAlign: 'center' }}>
           Conoce a las organizaciones con las que colaboramos para mejorar la vida de los animales.
