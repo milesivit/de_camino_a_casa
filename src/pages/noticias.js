@@ -11,6 +11,9 @@ import noticia3 from '../img/noticia3.jpeg';
 import noticia4 from '../img/noticia4.jpeg';
 import noticia5 from '../img/noticia5.jpeg';
 import noticia6 from '../img/noticia6.jpeg';
+import noticia7 from '../img/noticia7.jpg';
+import noticia8 from '../img/noticia8.jpg';
+
 
 const { Title } = Typography;
 
@@ -44,6 +47,16 @@ const noticias = [
     title: "¡CUIDADO! Tortuga Peligrosa Se Pierde en la Ciudad",
     description: "Una tortuga, considerada peligrosa, se ha perdido en la ciudad. Las autoridades piden a los vecinos que no se acerquen y que reporten cualquier avistamiento mientras se lleva a cabo la búsqueda.",
     image: noticia6
+  },
+  {
+    title: "Gallina pone huevo gigante en España",
+    description: "Una gallina en España sorprendió al poner un huevo casi el doble de grande que uno normal, un raro fenómeno causado por un desajuste hormonal.",
+    image: noticia7
+  },
+  {
+    title: "Perro guardian salva a su familia de un intruso",
+    description: "Un perro guardian en México evitó un robo al atacar a un intruso que intentó ingresar a la casa de su dueño. El valiente canino logró ahuyentar al ladrón, protegiendo a la familia sin sufrir daños.",
+    image: noticia8
   }
 ];
 
