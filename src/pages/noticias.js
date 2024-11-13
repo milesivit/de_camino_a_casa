@@ -4,7 +4,7 @@ import FooterComponent from '../components/footer';
 import { Card, Row, Col, Typography } from 'antd';
 import '../css/noticias.css';
 import Banner from '../img/noticias.png';
-import UltimoMomento from '../img/bannerUltMom.jpeg';
+import UltimoMomento from '../img/ultimomomento.png';
 import noticia1 from '../img/noticia1.jpg';
 import noticia2 from '../img/noticia2.jpeg';
 import noticia3 from '../img/noticia3.jpeg';
@@ -81,7 +81,7 @@ function Noticias() {
             <img
               src={UltimoMomento}
               alt="Banner"
-              style={{ width: '100%', height: 'auto', maxHeight: '200px' }}  // Ajustamos la altura máxima
+              style={{ width: '100%', height: 'auto', marginTop: '2%' }}  // Ajustamos la altura máxima
             />
           </div>
         </Col>
@@ -126,10 +126,10 @@ function Noticias() {
 
                   {/* Texto de la noticia */}
                   <Col xs={14} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'right', paddingLeft: '20px' }}>
-                    <Title level={3} style={{ color: '#fff', fontWeight: '700' }}>
+                    <Title level={3} style={{ color: '#fff', fontWeight: '700', marginLeft: '4%' }}>
                       {noticia.title}
                     </Title>
-                    <p style={{ fontSize: '16px', lineHeight: '1.8', color: '#fff' }}>
+                    <p style={{ fontSize: '16px', lineHeight: '1.8', color: '#fff', marginLeft: '8%' }}>
                       {noticia.description}
                     </p>
                   </Col>
