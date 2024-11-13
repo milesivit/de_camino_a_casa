@@ -42,7 +42,7 @@ const tiendas = [
     image: tienda4  // Reemplaza con la imagen real
   },
   {
-    name: "Paws & Claws",
+    name: "Claws & Paws",
     description: "Tienda para el bienestar de tu mascota, con productos ecológicos.",
     address: "Calle del Sol 453, Buenos Aires",
     image: tienda5  // Reemplaza con la imagen real
