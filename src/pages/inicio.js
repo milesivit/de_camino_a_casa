@@ -3,7 +3,7 @@ import {Row, Col } from 'antd';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
 import perroFacha from '../img/perroFacha.jpg';
-import bannerInicio from '../img/bannerInicio.png';
+import Banner from '../img/inicio.png'
 
 function Inicio() {
   return (
@@ -13,7 +13,7 @@ function Inicio() {
       <Row>
         <Col xs={24}>
           <div>
-            <img src={bannerInicio} alt="Banner" style={{ width: '100%' }} />
+            <img src={Banner} alt="Banner" style={{ width: '100%' }} />
           </div>
         </Col>
       </Row>
