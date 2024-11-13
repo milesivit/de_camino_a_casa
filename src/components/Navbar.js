@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import 'antd/dist/reset.css';
 import { Layout, Menu, Dropdown, Avatar } from 'antd';
 import perro from '../img/perro.png';
-import huella from '../img/hola+.png';
+import huella from '../img/logo.png';
 import '../css/Navbar.css'; // Importa después del CSS de Ant Design
 
 const { Header } = Layout;
@@ -12,7 +12,6 @@ function Navbar() {
   const dropdownMenu = (
     <Menu>
       <Menu.Item key="1"><Link to="/ayuda">Ayuda</Link></Menu.Item>
-      <Menu.Item key="2"><Link to="/EntidadesAsociadas">Entidades Asociadas</Link></Menu.Item>
     </Menu>
   );
 
@@ -40,11 +39,14 @@ function Navbar() {
           <Menu.Item key="8" className="custom-nav-button">
             <Link to="/TestPersonalidad">Test</Link>
           </Menu.Item>
-          <Menu.Item key="8" className="custom-nav-button">
+          <Menu.Item key="9" className="custom-nav-button">
             <Link to="/Noticias">Noticias</Link>
           </Menu.Item>
-          <Menu.Item key="8" className="custom-nav-button">
+          <Menu.Item key="10" className="custom-nav-button">
             <Link to="/SobreNosotros">Sobre Nosotros</Link>
+          </Menu.Item>
+          <Menu.Item key="11" className="custom-nav-button">
+          <Link to="/EntidadesAsociadas">Entidades Asociadas</Link>
           </Menu.Item>
         </Menu>
         <Dropdown overlay={dropdownMenu} trigger={['click']}>
