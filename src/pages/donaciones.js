@@ -3,7 +3,7 @@ import React from 'react';
 import { Form, Input, Button, Typography, message, Card } from 'antd';
 import Navbar from '../components/Navbar';
 import FooterComponent from '../components/footer';
-import banner from '../img/Banner_Donaciones.png';  // Asegúrate de tener la imagen en la ruta correcta
+import banner from '../img/donaciones.png';  // Asegúrate de tener la imagen en la ruta correcta
 import '../css/donaciones.css'; // Importamos el archivo CSS
 
 const { Title, Paragraph } = Typography;
